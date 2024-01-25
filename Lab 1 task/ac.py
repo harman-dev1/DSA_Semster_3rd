@@ -1,0 +1,1 @@
+print ("Hello to Data Structure and Algorithms Course")

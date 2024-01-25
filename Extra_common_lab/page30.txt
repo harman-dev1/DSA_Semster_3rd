@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{caption}
+\begin{document}
+\begin{table}
+\captionsetup{labelformat=empty}
+\caption{Paper 30: A Transfer Learning and U-Net-based automatic detection of diabetic retinopathy from fundus images}
+\begin{tabular}{|p{2.5cm}|p{8cm}|}
+\hline
+\textbf{Section} & \textbf{Content} \\
+\hline
+\multirow{11}{*}{Motivation} & Diabetic retinopathy (DR) is a global leading cause of visual impairment and blindness associated with diabetes. Manual screening by professionals is laborious and time-intensive. Recognizing various retinal biomarkers and DR grades poses a significant challenge. Deep neural networks offer potential solutions. \\
+\hline
+\multirow{7}{*}{Problem} & Manual DR screening is time-consuming, reliant on ophthalmologists, and faces challenges in distinguishing subtle differences among retinal biomarkers and DR grades. \\
+\hline
+\multirow{11}{*}{Gap} & Existing methods lack efficiency in automated DR classification due to challenges in precise optic disc (OD) and blood vessel (BV) segmentation. Recognizing specific retinal biomarkers, such as microaneurysms (MA), hemorrhages (HM), and exudates (EX), remains a complex task. \\
+\hline
+\multirow{12}{*}{\shortstack{Problem\\Statement}} & To address the challenges in automated DR classification, a novel two-stage framework is proposed. The first stage involves employing distinct U-Net models for precise OD and BV segmentation. In the second stage, a VGGNet-based transfer learning model uses enhanced retinal images for accurate DR detection and identification of biomarkers (MA, HM, EX). \\
+\hline
+\multirow{15}{*}{Experiments} & The proposed approach is extensively evaluated on EyePACS-1, Messidor-2, and DIARETDB0 datasets. Two U-Net models are used for OD and BV segmentation, and a VGGNet-based model is applied for DR detection. Performance metrics include average accuracy, with results of 96.60\%, 93.95\%, and 92.25\% on EyePACS-1, Messidor-2, and DIARETDB0, respectively. \\
+\hline
+\multirow{11}{*}{Results} & The proposed two-stage framework achieves state-of-the-art performance, demonstrating an average accuracy of 96.60\%, 93.95\%, and 92.25\% on EyePACS-1, Messidor-2, and DIARETDB0, respectively. Comparative experiments highlight the effectiveness of the proposed approach over baseline methods. \\
+\hline
+\multirow{13}{*}{Conclusion} & The study introduces an effective solution for automated DR classification, leveraging precise segmentation and transfer learning. The proposed framework outperforms baseline methods, emphasizing its potential for early detection and treatment of diabetic retinopathy, thus reducing the risk of visual impairment. \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
